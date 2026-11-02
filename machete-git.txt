@@ -1,0 +1,47 @@
+==================================================
+             MACHETE BÁSICO DE GIT
+==================================================
+
+1. Comando "git status"
+- ¿Qué hace? Te muestra el estado actual de tu proyecto. Te dice qué archivos modificaste, cuáles están listos para guardarse y cuáles faltan.
+- ¿Cuándo usarlo? TODO EL TIEMPO. Es una brújula. Se suele usar antes y después de cualquier otro comando para saber el estado actual en el que se encuentra el repo..
+- Ejemplo: git status
+
+2. Comando "git add <ruta>"
+- ¿Qué hace? Prepara los archivos modificados para ser guardados. Los mueve a lo que se llama "Staging Area".
+- ¿Cuándo usarlo? Cuando terminaste de escribir algo de código y querés incluir esos cambios en tu próximo guardado.
+- Ejemplos: 
+  git add mi_script.py  (agrega un archivo específico)
+  git add .             (agrega TODOS los archivos modificados)
+
+3. Comando 'git commit -m "<descripción>"'
+- ¿Qué hace? Guarda permanentemente los cambios que dejaste en la sala de espera con "add". Es como sacarle una "foto" a tu proyecto en ese momento.
+- ¿Cuándo usarlo? Después de usar "add". Siempre tiene que ir acompañado de un mensaje claro que explique qué cambios hiciste.
+- Ejemplo: git commit -m "Agrego función para sumar los datos"
+
+4. Comando "git fetch"
+- ¿Qué hace? Se conecta a internet y se fija si alguien más subió cambios nuevos en el repositorio actual, pero NO modifica tus archivos locales. 
+- ¿Cuándo usarlo? Cuando estás trabajando en equipo y querés chusmear si hay actualizaciones antes de mezclarlas con tu código.
+- Ejemplo: git fetch
+
+5. Comando "git pull"
+- ¿Qué hace? Descarga los últimos cambios que están en internet y los mezcla automáticamente con tu código. (En resumen: hace un 'fetch' y después un 'merge').
+- ¿Cuándo usarlo? Siempre al empezar a trabajar. Te asegura tener la última versión del proyecto y evita que rompas el trabajo de tus compañeros.
+- Ejemplo: git pull
+
+6. Comando "git push"
+- ¿Qué hace? Sube los commits guardados en el repositorio local a internet para que el resto del equipo las pueda ver.
+- ¿Cuándo usarlo? Cuando ya hiciste uno o varios 'commits' y querés compartir tu trabajo terminado o hacer un respaldo en la nube.
+- Ejemplo: git push
+
+==================================================
+ FLUJO DE TRABAJO DIARIO (EL PASO A PASO IDEAL)
+==================================================
+1. git pull    (Actualizás el repo local con la última versión subida en el repositorio remoto)
+2. git status  (Revisás el estado en el que se encuentra el repo local)
+3. *** Escribís y probás tu código ***
+4. git status  (Ves qué archivos modificaste)
+5. git add .   (Preparás los cambios)
+6. git commit -m "Mensaje explicando el cambio" (Guardás)
+7. git push    (Subís todo a internet)
+==================================================
