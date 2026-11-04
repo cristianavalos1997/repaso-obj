@@ -6,7 +6,6 @@ class Sensor:
         self.sensor_id = sensor_id
         self.temperatura = temperatura
         self.ubicacion = ubicacion
-
     def to_dict(self) -> dict:
         """Convierte el objeto sensor en un diccionario estándar."""
         return {
@@ -14,6 +13,5 @@ class Sensor:
             "temperatura": self.temperatura,
             "ubicacion": self.ubicacion
         }
-
     def __str__(self):
         return f"Sensor [{self.sensor_id}] - Temp: {self.temperatura}°C - Ubicación: {self.ubicacion}"
